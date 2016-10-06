@@ -1,0 +1,29 @@
+{
+  "name": "space-blaster",
+  "version": "1.0.0",
+  "description": "3d Asteroids",
+  "main": "index.js",
+  "scripts": {
+  "build": "browserify js/main.js | uglifyjs -mc > app.js",
+  "dev": "watchify js/main.js -v -o app.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmac99999/3dAsteroidsGame.git"
+  },
+  "author": "Justin M.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmac99999/3dAsteroidsGame/issues"
+  },
+  "homepage": "https://github.com/jmac99999/3dAsteroidsGame#readme",
+  "dependencies": {
+    "three": "^0.73.0",
+    "three-world": "^2.1.1"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "uglify-js": "^2.6.0",
+    "watchify": "^3.6.0"
+  }
+}
